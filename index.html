@@ -11,30 +11,32 @@
     <div class="main-layout">
       <header class="main-header">
         <div class="header-grid">
-          <div>search area</div>
-          <div> socials </div>
+          <div class="search-container">
+            <label for="search"></label>
+            <input
+              name="search"
+              type="text"
+              title="search"
+              class="search-field"
+            />
+          </div>
+          <div>socials</div>
         </div>
       </header>
 
-
-     <!--------------------------------------- SIDE BAR ---------------------------------------------------------->
+      <!--------------------------------------- SIDE BAR ---------------------------------------------------------->
 
       <aside class="side-bar">
         <div class="side-header-wrapper">
-          <img
-            class="logo"
-            src="/public/assests/heart-monitoring.png"
-            alt="logo"
-          />
+          <img class="logo" src="/assests/heart-monitoring.png" alt="logo" />
           <h1>DashBoard</h1>
         </div>
 
         <nav class="main-nav-bar">
-
           <a href="/">
             <div class="flex-row link-container">
               <img
-                src="/public/assests/home_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                src="/assests/home_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
                 alt="home"
               />
               <p class="main-nav-bar-text">Home</p>
@@ -44,7 +46,7 @@
           <a href="">
             <div class="flex-row link-container">
               <img
-                src="/public/assests/account_box_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                src="/assests/account_box_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
                 alt="home"
               />
               <p class="main-nav-bar-text">Profile</p>
@@ -54,7 +56,7 @@
           <a href="">
             <div class="flex-row link-container">
               <img
-                src="/public/assests/sms_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                src="/assests/sms_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
                 alt="home"
               />
               <p class="main-nav-bar-text">Messages</p>
@@ -64,7 +66,7 @@
           <a href="">
             <div class="flex-row link-container">
               <img
-                src="/public/assests/history_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                src="/assests/history_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
                 alt="home"
               />
               <p class="main-nav-bar-text">History</p>
@@ -74,7 +76,7 @@
           <a href="">
             <div class="flex-row link-container">
               <img
-                src="/public/assests/task_alt_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                src="/assests/task_alt_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
                 alt="home"
               />
               <p class="main-nav-bar-text">Tasks</p>
@@ -84,7 +86,7 @@
           <a href="">
             <div class="flex-row link-container">
               <img
-                src="/public/assests/communities_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                src="/assests/communities_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
                 alt="home"
               />
               <p class="main-nav-bar-text">Communities</p>
@@ -92,12 +94,11 @@
           </a>
         </nav>
 
-
         <nav class="settings-nav">
           <a href="">
             <div class="flex-row link-container">
               <img
-                src="/public/assests/settings_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                src="/assests/settings_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
                 alt="home"
               />
               <p class="main-nav-bar-text">Settings</p>
@@ -105,7 +106,7 @@
             <a href="">
               <div class="flex-row link-container">
                 <img
-                  src="/public/assests/support_agent_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                  src="/assests/support_agent_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
                   alt="home"
                 />
                 <p class="main-nav-bar-text">Support</p>
@@ -114,7 +115,7 @@
             <a href="">
               <div class="flex-row link-container">
                 <img
-                  src="/public/assests/security_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                  src="/assests/security_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
                   alt="home"
                 />
                 <p class="main-nav-bar-text">Privacy</p>
@@ -123,50 +124,84 @@
           </a>
         </nav>
       </aside>
-<!--------------------------------------------- main --------------------------------------------------------->
+      <!--------------------------------------------- main --------------------------------------------------------->
       <main>
         <div class="card">
           <h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo adipisci quis enim dolore illo deleniti vero illum, expedita id odio! Facilis in consequatur quisquam rerum voluptatem obcaecati perspiciatis accusantium reiciendis.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+              adipisci quis enim dolore illo deleniti vero illum, expedita id
+              odio! Facilis in consequatur quisquam rerum voluptatem obcaecati
+              perspiciatis accusantium reiciendis.
+            </p>
           </h2>
         </div>
 
         <div class="card">
           <h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo adipisci quis enim dolore illo deleniti vero illum, expedita id odio! Facilis in consequatur quisquam rerum voluptatem obcaecati perspiciatis accusantium reiciendis.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+              adipisci quis enim dolore illo deleniti vero illum, expedita id
+              odio! Facilis in consequatur quisquam rerum voluptatem obcaecati
+              perspiciatis accusantium reiciendis.
+            </p>
           </h2>
         </div>
 
         <div class="card">
           <h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo adipisci quis enim dolore illo deleniti vero illum, expedita id odio! Facilis in consequatur quisquam rerum voluptatem obcaecati perspiciatis accusantium reiciendis.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+              adipisci quis enim dolore illo deleniti vero illum, expedita id
+              odio! Facilis in consequatur quisquam rerum voluptatem obcaecati
+              perspiciatis accusantium reiciendis.
+            </p>
           </h2>
         </div>
 
         <div class="card">
           <h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo adipisci quis enim dolore illo deleniti vero illum, expedita id odio! Facilis in consequatur quisquam rerum voluptatem obcaecati perspiciatis accusantium reiciendis.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+              adipisci quis enim dolore illo deleniti vero illum, expedita id
+              odio! Facilis in consequatur quisquam rerum voluptatem obcaecati
+              perspiciatis accusantium reiciendis.
+            </p>
           </h2>
         </div>
 
         <div class="card">
           <h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo adipisci quis enim dolore illo deleniti vero illum, expedita id odio! Facilis in consequatur quisquam rerum voluptatem obcaecati perspiciatis accusantium reiciendis.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+              adipisci quis enim dolore illo deleniti vero illum, expedita id
+              odio! Facilis in consequatur quisquam rerum voluptatem obcaecati
+              perspiciatis accusantium reiciendis.
+            </p>
           </h2>
         </div>
 
         <div class="card">
           <h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo adipisci quis enim dolore illo deleniti vero illum, expedita id odio! Facilis in consequatur quisquam rerum voluptatem obcaecati perspiciatis accusantium reiciendis.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+              adipisci quis enim dolore illo deleniti vero illum, expedita id
+              odio! Facilis in consequatur quisquam rerum voluptatem obcaecati
+              perspiciatis accusantium reiciendis.
+            </p>
           </h2>
         </div>
 
         <div class="card">
           <h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo adipisci quis enim dolore illo deleniti vero illum, expedita id odio! Facilis in consequatur quisquam rerum voluptatem obcaecati perspiciatis accusantium reiciendis.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+              adipisci quis enim dolore illo deleniti vero illum, expedita id
+              odio! Facilis in consequatur quisquam rerum voluptatem obcaecati
+              perspiciatis accusantium reiciendis.
+            </p>
           </h2>
         </div>
-
       </main>
     </div>
   </body>
