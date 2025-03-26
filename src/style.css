@@ -67,13 +67,13 @@ a {
   color: var(--color-base-content);
 }
 
-/* Composition */
+/* MARK:Composition */
 
 /* Main layout*/
 .main-layout {
   /*height: 100dvh; */
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 15% 85%;
   /* grid-template-rows: 20% 80%;*/
 }
 
@@ -104,11 +104,12 @@ main {
   grid-template-columns: 1fr 1fr;
   /*justify-items: center;*/
   align-items: center;
-  width: 20rem;
+  width: 50rem;
   column-gap: 1rem;
+  transform: translateX(-230px);
 }
 
-/********************************************************BLOCK*************************************/
+/*MARK:BLOCK*/
 
 .main-header {
   background-color: var(--color-base-200);
@@ -193,8 +194,8 @@ main {
 }
 
 .avatar {
-  width: 64px;
-  height: 64px;
+  width: 54px;
+  height: 54px;
   object-fit: cover;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
@@ -218,13 +219,37 @@ main {
 
 .avatar-header {
   grid-column: 2/3;
+  font-size: 2rem;
 }
 
 .bell-svg {
   width: 28px;
 }
 
-/*utilitie*/
+.search-text-login {
+  font-size: 1.5rem;
+}
+
+.nav-button {
+  border: none;
+  padding: 1rem;
+  margin: 1rem;
+  min-width: 8rem;
+  border-radius: var(--radius-box);
+  cursor: pointer;
+  background-color: var(--color-primary);
+  color: var(--color-base-content);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-button:hover {
+  filter: brightness(0.9) saturate(0.7);
+  color: var(--color-primary-content);
+}
+
+/*MARK: UTILITY*/
 
 .flex-row {
   display: flex;
