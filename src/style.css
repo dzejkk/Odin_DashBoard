@@ -19,6 +19,8 @@
   --color-neutral: oklch(14% 0.005 285.823);
   --color-neutral-content: oklch(92% 0.004 286.32);
 
+  --color-neutral-hover-content: oklch(92% 0.004 286.32/0.34);
+
   --color-info: oklch(74% 0.16 232.661);
   --color-info-content: oklch(29% 0.066 243.157);
 
@@ -40,11 +42,28 @@
   --border: 1px;
   --depth: 1;
   --noise: 0;
+  --top-spacing: 1.5rem;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
 
  
 body {
   background-color: var(--color-base-100);
+  color: var(--color-base-content);
+  line-height: 1.5;
+  min-height: 100dvh;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
   color: var(--color-base-content);
 }
 
@@ -58,33 +77,110 @@ body {
 
 /* Main layout*/
 .main-layout {
+  /*height: 100dvh; */
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 20% 80%;
+ /* grid-template-rows: 20% 80%;*/
 }
 
 .main-header {
   grid-column: 2 / 3;
-
 }
 
 .side-bar {
   grid-column: 1 / 2 ;
-  grid-row: 1 / 3;
+  grid-row: 1/3;
 }
 
+main {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.header-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
 
 
 
 /*block*/
 
-.header-wrapper {
+.side-header-wrapper {
   display: flex;
+  gap: 0.5rem;
+  padding-block-start: var(--top-spacing); 
+  padding-block-end: 1.5rem;
+}
+
+.side-bar {
+  background-color: var(--color-base-200);
+  padding-inline-start: 1rem;
+}
+
+.side-bar  nav  img {
+  filter: brightness(0.85);
+
+}
+
+.main-nav-bar a {
+ /* padding: 1rem;*/
+  cursor: pointer;
+}
+
+.main-nav-bar {
+  padding-block-end: 1.5rem;
+}
+
+
+.link-container {
+  transition: all 0.3s ease-in-out;
+  padding-block: 0.5rem;
+}
+
+
+.link-container:hover {
+  background-color: var(--color-neutral-hover-content);
+
+}
+
+.settings-nav a{
+  /*padding: 1rem;*/
 }
 
 
 .logo {
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
   aspect-ratio: 1 / 1;
   filter: invert(83%) sepia(98%) saturate(4041%) hue-rotate(177deg) brightness(110%) contrast(104%);
+}
+
+
+.card {
+  height: 200px;
+  width: 300px;
+  background-color: var(--color-error-content);
+  padding: 1rem;
+}
+
+.card p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+
+.header-grid div {
+  font-size: 2rem;
+}
+
+
+/*utilitie*/
+
+.flex-row {
+  display: flex;
+  gap: 0.5rem;
+
 }
