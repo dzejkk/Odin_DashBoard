@@ -50,6 +50,10 @@
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+}
+
 body {
   background-color: var(--color-base-100);
   color: var(--color-base-content);
@@ -86,14 +90,25 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  padding: 1rem;
 }
 
 .header-grid {
   display: grid;
   grid-template-rows: 1fr 1fr;
+  row-gap: 1rem;
 }
 
-/*block*/
+.socials-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /*justify-items: center;*/
+  align-items: center;
+  width: 20rem;
+  column-gap: 1rem;
+}
+
+/********************************************************BLOCK*************************************/
 
 .main-header {
   background-color: var(--color-base-200);
@@ -157,10 +172,6 @@ main {
   font-weight: 300;
 }
 
-.header-grid div {
-  font-size: 2rem;
-}
-
 .search-field {
   border: none;
   width: 25rem;
@@ -170,14 +181,47 @@ main {
 }
 
 .search-container {
-  padding-inline-start: 1rem;
+  padding-inline: 1rem;
+  padding-top: 1rem;
 }
 
-.search-container::before {
+.search-wrapper::before {
   content: url(/public/assests/search_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
   width: 100px;
   padding-left: 1.5rem;
   vertical-align: middle;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
+.avatar-2 {
+  width: 74px;
+  height: 74px;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+
+  grid-column: 1;
+  grid-row: 1 / 3;
+  justify-self: end;
+}
+
+.invitation {
+  grid-column: 2 / 3;
+}
+
+.avatar-header {
+  grid-column: 2/3;
+}
+
+.bell-svg {
+  width: 28px;
 }
 
 /*utilitie*/
@@ -185,4 +229,20 @@ main {
 .flex-row {
   display: flex;
   gap: 0.5rem;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.padding-inline-end {
+  padding-inline-end: 2rem;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.align-center {
+  align-items: center;
 }
