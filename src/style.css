@@ -47,3 +47,44 @@ body {
   background-color: var(--color-base-100);
   color: var(--color-base-content);
 }
+
+
+
+
+
+
+/* Composition */
+
+
+/* Main layout*/
+.main-layout {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+.main-header {
+  grid-column: 2 / 3;
+
+}
+
+.side-bar {
+  grid-column: 1 / 2 ;
+  grid-row: 1 / 3;
+}
+
+
+
+
+/*block*/
+
+.header-wrapper {
+  display: flex;
+}
+
+
+.logo {
+  width: 64px;
+  height: 64px;
+  aspect-ratio: 1 / 1;
+  filter: invert(83%) sepia(98%) saturate(4041%) hue-rotate(177deg) brightness(110%) contrast(104%);
+}
