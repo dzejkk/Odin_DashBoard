@@ -19,6 +19,7 @@
   --color-neutral-content: oklch(92% 0.004 286.32);
 
   --color-neutral-hover-content: oklch(92% 0.004 286.32/0.34);
+  --color-dimmed-text: oklch(92% 0.004 286.32/0.70);
 
   --color-info: oklch(74% 0.16 232.661);
   --color-info-content: oklch(29% 0.066 243.157);
@@ -42,6 +43,10 @@
   --depth: 1;
   --noise: 0;
   --top-spacing: 1.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {
@@ -84,6 +89,10 @@ a {
 .side-bar {
   grid-column: 1 / 2;
   grid-row: 1/3;
+}
+
+.sticky {
+  position: fixed;
 }
 
 
@@ -157,10 +166,6 @@ section {
   background-color: var(--color-neutral-hover-content);
 }
 
-.settings-nav a {
-  /*padding: 1rem;*/
-}
-
 .logo {
   width: 48px;
   height: 48px;
@@ -174,16 +179,25 @@ section {
   padding: 1rem;
   border-radius: var(--radius-box);
   border-left: solid 4px var(--color-primary);
-  transition: all 0.2s ease-in-out;
+  /* Smooth transition properties */
+  transition: transform 0.3s ease;
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .card:hover {
-  transform: perspective(1px) scale(1.02);
+  transform: perspective(1px) scale(1.02); /*smoothing*/
 }
 
 .card p {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
+  color: var(--color-neutral-content);
+
+  /*smooting*/
+  transform: translateZ(10px);
+  backface-visibility: hidden;
 }
 
 .search-field {
@@ -278,7 +292,7 @@ section {
 }
 
 .card-btns-container > button:hover {
-  background-color: var(--color-neutral-hover-content);
+  background-color: var(--color-primary);
 }
 
 
@@ -290,6 +304,61 @@ section {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.anoucment-container {
+  padding: 1rem;
+  padding-inline-end: 4rem;
+  border-radius: var(--radius-selector);
+  max-width: 55ch;
+
+}
+
+.anoucments {
+  padding: 2rem;
+  background-color: var(--color-base-300);
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+
+
+/*to stylr br and make border */
+
+br{
+  content: '';
+  display: inline-block;
+  width: 95%;
+  border-bottom: 1px solid var(--color-base-content);
+  text-align: center;
+}
+
+.trending {
+  padding: 2rem;
+  padding-inline-end: 4rem;
+  border-radius: var(--radius-selector);
+  background-color: var(--color-base-300);
+}
+
+.trending > div {
+  padding-block-end: 2rem;
+}
+
+.trending-avatar {
+  width: 64px;
+  border-radius: 50%;
+  background-color: var(--color-base-content);
+}
+
+.metioned-text {
+  font-weight: 700;
 }
 
 /*MARK: UTILITY*/
@@ -313,4 +382,9 @@ section {
 
 .align-center {
   align-items: center;
+}
+
+
+.dimmed-text {
+  color: var(--color-dimmed-text);
 }
