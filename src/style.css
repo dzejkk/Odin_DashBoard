@@ -170,8 +170,15 @@ section {
 }
 
 .card {
-  background-color: var(--color-error-content);
+  background-color: var(--color-base-300);
   padding: 1rem;
+  border-radius: var(--radius-box);
+  border-left: solid 4px var(--color-primary);
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: perspective(1px) scale(1.02);
 }
 
 .card p {
@@ -253,6 +260,36 @@ section {
 .nav-button:hover {
   filter: brightness(0.9) saturate(0.7);
   color: var(--color-primary-content);
+}
+
+.card-btns-container {
+  padding-block-start: 1rem;
+  text-align: right;
+}
+
+.card-btns-container > button {
+  padding-inline: 0.5rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.card-btns-container > button > img {
+  padding-inline: 0.5rem;
+  padding-block: 0.25rem;
+}
+
+.card-btns-container > button:hover {
+  background-color: var(--color-neutral-hover-content);
+}
+
+
+.card-btns-container > button:active {
+  transform: translateY(-5px);
+}
+
+.card-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 /*MARK: UTILITY*/
