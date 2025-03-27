@@ -19,7 +19,7 @@
   --color-neutral-content: oklch(92% 0.004 286.32);
 
   --color-neutral-hover-content: oklch(92% 0.004 286.32/0.34);
-  --color-dimmed-text: oklch(92% 0.004 286.32/0.70);
+  --color-dimmed-text: oklch(92% 0.004 286.32/0.7);
 
   --color-info: oklch(74% 0.16 232.661);
   --color-info-content: oklch(29% 0.066 243.157);
@@ -93,8 +93,8 @@ a {
 
 .sticky {
   position: fixed;
+  width: 13%;
 }
-
 
 .header-grid {
   display: grid;
@@ -119,10 +119,10 @@ section {
 
 .card-container {
   padding: 1rem;
-  
+
   grid-column: 1 / 2;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 1rem;
 }
 
@@ -295,7 +295,6 @@ section {
   background-color: var(--color-primary);
 }
 
-
 .card-btns-container > button:active {
   transform: translateY(-5px);
 }
@@ -311,7 +310,6 @@ section {
   padding-inline-end: 4rem;
   border-radius: var(--radius-selector);
   max-width: 55ch;
-
 }
 
 .anoucments {
@@ -328,12 +326,10 @@ h4 {
   font-size: 1.25rem;
 }
 
-
-
 /*to stylr br and make border */
 
-br{
-  content: '';
+br {
+  content: "";
   display: inline-block;
   width: 95%;
   border-bottom: 1px solid var(--color-base-content);
@@ -383,7 +379,6 @@ br{
 .align-center {
   align-items: center;
 }
-
 
 .dimmed-text {
   color: var(--color-dimmed-text);
