@@ -44,6 +44,12 @@
   --top-spacing: 1.5rem;
 }
 
+<<<<<<< Updated upstream
+=======
+
+/* RESET */
+
+>>>>>>> Stashed changes
 * {
   margin: 0;
   padding: 0;
@@ -67,7 +73,17 @@ a {
   color: var(--color-base-content);
 }
 
+<<<<<<< Updated upstream
 /* MARK:Composition */
+=======
+/*////////////////////////////////////////////////////////*/
+
+
+
+
+/* Composition */
+
+>>>>>>> Stashed changes
 
 /* Main layout*/
 .main-layout {
@@ -226,6 +242,7 @@ main {
   width: 28px;
 }
 
+<<<<<<< Updated upstream
 .search-text-login {
   font-size: 1.5rem;
 }
@@ -250,6 +267,10 @@ main {
 }
 
 /*MARK: UTILITY*/
+=======
+
+/*utilitie*/
+>>>>>>> Stashed changes
 
 .flex-row {
   display: flex;
