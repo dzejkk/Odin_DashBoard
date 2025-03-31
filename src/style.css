@@ -17,6 +17,7 @@
 
   --color-neutral: oklch(14% 0.005 285.823);
   --color-neutral-content: oklch(92% 0.004 286.32);
+  --color-neutral-content-dimmed: oklch(92% 0.004 286.32/0.05);
 
   --color-neutral-hover-content: oklch(92% 0.004 286.32/0.34);
   --color-dimmed-text: oklch(92% 0.004 286.32/0.7);
@@ -181,7 +182,7 @@ section {
   border-radius: var(--radius-box);
   border-left: solid 4px var(--color-primary);
   /* Smooth transition properties */
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
   will-change: transform;
   transform: translateZ(0);
   backface-visibility: hidden;
@@ -189,6 +190,7 @@ section {
 
 .card:hover {
   transform: perspective(1px) scale(1.02); /*smoothing*/
+  background-color: var(--color-neutral-content-dimmed);
 }
 
 .card p {
@@ -324,7 +326,7 @@ h1 {
 
 h3 {
   font-size: 1.75rem;
-  font-weight: normal;
+  font-weight: 500;
   padding: 1rem;
   margin: 0.25rem;
 }
