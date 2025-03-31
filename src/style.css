@@ -60,7 +60,7 @@ img {
 }
 
 body {
-  background-color: var(--color-base-100);
+  background-color: var(--color-base-200);
   color: var(--color-base-content);
   line-height: 1.5;
   min-height: 100dvh;
@@ -123,13 +123,13 @@ section {
   grid-column: 1 / 2;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 /*MARK:BLOCK*/
 
 .main-header {
-  background-color: var(--color-base-200);
+  background-color: var(--color-base-100);
 }
 
 .side-header-wrapper {
@@ -140,7 +140,7 @@ section {
 }
 
 .side-bar {
-  background-color: var(--color-base-200);
+  background-color: var(--color-base-100);
   padding-inline-start: 1rem;
 }
 
@@ -167,15 +167,15 @@ section {
 }
 
 .logo {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   aspect-ratio: 1 / 1;
   filter: invert(83%) sepia(98%) saturate(4041%) hue-rotate(177deg)
     brightness(110%) contrast(104%);
 }
 
 .card {
-  background-color: var(--color-base-300);
+  background-color: var(--color-base-100);
   padding: 1rem;
   border-radius: var(--radius-box);
   border-left: solid 4px var(--color-primary);
@@ -314,12 +314,18 @@ section {
 
 .anoucments {
   padding: 2rem;
-  background-color: var(--color-base-300);
+  background-color: var(--color-base-100);
+}
+
+h1 {
+  font-size: 2rem;
 }
 
 h3 {
   font-size: 1.75rem;
   font-weight: normal;
+  padding: 1rem;
+  margin: 0.25rem;
 }
 
 h4 {
@@ -340,7 +346,7 @@ br {
   padding: 2rem;
   padding-inline-end: 4rem;
   border-radius: var(--radius-selector);
-  background-color: var(--color-base-300);
+  background-color: var(--color-base-100);
 }
 
 .trending > div {
