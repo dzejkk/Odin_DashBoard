@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" crossorigin href="/Odin_DashBoard/assets/index-DhWVsk9X.css">
+  </head>
+  <body>
+    <div class="main-layout">
+      <!---------------------------------------- HEADER------------------------------------------------------------------------------>
+
+      <header class="main-header" id="top">
+        <div class="header-grid">
+          <div class="search-container flex-row space-between align-center">
+            <div class="search-wrapper">
+              <label for="search"></label>
+              <input
+                name="search"
+                type="text"
+                title="search"
+                class="search-field"
+              />
+            </div>
+
+            <div
+              class="avatar-section flex-row padding-inline-end gap-1 align-center"
+            >
+              <img
+                src="/Odin_DashBoard/assests/notifications_24dp_ECF9FF_FILL0_wght400_GRAD0_opsz24.svg"
+                alt="bell"
+                class="bell-svg"
+              />
+              <img src="/Odin_DashBoard/assests/avatar.jpeg" alt="avatar" class="avatar" />
+              <p class="search-text-login">Jakub Kontra</p>
+            </div>
+          </div>
+
+          <div class="flex-row space-between">
+            <div class="socials-container">
+              <img src="/Odin_DashBoard/assests/avatar.jpeg" alt="avatar-2" class="avatar-2" />
+              <p class="invitation">Hi there,</p>
+              <h2 class="avatar-header">Jakub Kontra (@jakub)</h2>
+            </div>
+
+            <div class="nav-buttons padding-inline-end">
+              <button type="button" class="nav-button">New</button>
+              <button type="button" class="nav-button">Upload</button>
+              <button type="button" class="nav-button">Share</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!--------------------------------------- SIDE BAR ---------------------------------------------------------->
+
+      <aside class="side-bar">
+        <div class="sticky">
+          <div class="side-header-wrapper">
+            <img class="logo" src="/Odin_DashBoard/assests/heart-monitoring.png" alt="logo" />
+            <h1>DashBoard</h1>
+          </div>
+          <nav class="main-nav-bar">
+            <a href="/#top">
+              <div class="flex-row link-container">
+                <img
+                  src="/Odin_DashBoard/assests/home_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt="home"
+                />
+                <p class="main-nav-bar-text">Home</p>
+              </div>
+            </a>
+            <a href="">
+              <div class="flex-row link-container">
+                <img
+                  src="/Odin_DashBoard/assests/account_box_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt="home"
+                />
+                <p class="main-nav-bar-text">Profile</p>
+              </div>
+            </a>
+            <a href="">
+              <div class="flex-row link-container">
+                <img
+                  src="/Odin_DashBoard/assests/sms_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt="home"
+                />
+                <p class="main-nav-bar-text">Messages</p>
+              </div>
+            </a>
+            <a href="">
+              <div class="flex-row link-container">
+                <img
+                  src="/Odin_DashBoard/assests/history_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt="home"
+                />
+                <p class="main-nav-bar-text">History</p>
+              </div>
+            </a>
+            <a href="">
+              <div class="flex-row link-container">
+                <img
+                  src="/Odin_DashBoard/assests/task_alt_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt="home"
+                />
+                <p class="main-nav-bar-text">Tasks</p>
+              </div>
+            </a>
+            <a href="">
+              <div class="flex-row link-container">
+                <img
+                  src="/Odin_DashBoard/assests/communities_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt="home"
+                />
+                <p class="main-nav-bar-text">Communities</p>
+              </div>
+            </a>
+          </nav>
+          <nav class="settings-nav">
+            <a href="">
+              <div class="flex-row link-container">
+                <img
+                  src="/Odin_DashBoard/assests/settings_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt="home"
+                />
+                <p class="main-nav-bar-text">Settings</p>
+              </div>
+              <a href="">
+                <div class="flex-row link-container">
+                  <img
+                    src="/Odin_DashBoard/assests/support_agent_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="home"
+                  />
+                  <p class="main-nav-bar-text">Support</p>
+                </div>
+              </a>
+              <a href="">
+                <div class="flex-row link-container">
+                  <img
+                    src="/Odin_DashBoard/assests/security_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="home"
+                  />
+                  <p class="main-nav-bar-text">Privacy</p>
+                </div>
+              </a>
+            </a>
+          </nav>
+        </div>
+      </aside>
+      <!--------------------------------------------- main --------------------------------------------------------->
+      <main>
+        <section>
+          <h3 class="padding-inline-start">Your links</h3>
+          <h3 class="padding-inline-start">Annoucments</h3>
+          <div class="card-container">
+            <div class="card">
+              <div>
+                <h2>Health</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                  adipisci quis enim dolore illo deleniti vero illum, expedita
+                  id odio! Facilis in consequatur quisquam rerum voluptatem
+                  obcaecati perspiciatis accusantium reiciendis.
+                </p>
+              </div>
+              <div class="card-btns-container">
+                <button class="card-button">
+                  <img
+                    src="/Odin_DashBoard/assests/star_24dp_ECF9FF_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="save"
+                  />
+                </button>
+                <button class="card-button">
+                  <img
+                    src="/Odin_DashBoard/assests/visibility_24dp_ECF9FF_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="insights"
+                  />
+                </button>
+                <button class="card-button">
+                  <img
+                    src="/Odin_DashBoard/assests/share_24dp_ECF9FF_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="share"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div>
+                <h2>SlovLex</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                  adipisci quis enim dolore illo deleniti vero illum, expedita
+                  id odio! Facilis in consequatur quisquam rerum voluptatem
+                  obcaecati perspiciatis accusantium reiciendis.
+                </p>
+              </div>
+              <div class="card-btns-container">
+                <button class="card-button">
+                  <img
+                    src="/Odin_DashBoard/assests/star_24dp_ECF9FF_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="save"
+                  />
+                </button>
+                <button class="card-button">
+                  <img
+                    src="/Odin_DashBoard/assests/visibility_24dp_ECF9FF_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="insights"
+                  />
+                </button>
+                <button class="card-button">
+                  <img
+                    src="/Odin_DashBoard/assests/share_24dp_ECF9FF_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="share"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div>
+                <h2>PO Portal</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                  adipisci quis enim dolore illo deleniti vero illum, expedita
+                  id odio! Facilis in consequatur quisquam rerum voluptatem
+                  obcaecati perspiciatis accusantium reiciendis.
+                </p>
+              </div>
+              <div class="card-btns-container">
+                <button class="card-button">
+                  <img
+                    src="/Odin_DashBoard/assests/star_24dp_ECF9FF_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="save"
+                  />
+                </button>
+                <button class="card-button">
+                  <img
+                    src="/Odin_DashBoard/assests/visibility_24dp_ECF9FF_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="insights"
+                  />
+                </button>
+                <button class="card-button">
+                  <img
+                    src="/Odin_DashBoard/assests/share_24dp_ECF9FF_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="share"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div>
+                <h2>HSE</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                  adipisci quis enim dolore illo deleniti vero illum, expedita
+                  id odio! Facilis in consequatur quisquam rerum voluptatem
+                  obcaecati perspiciatis accusantium reiciendis.
+                </p>
+              </div>
+              <div class="card-btns-container">
+                <button class="card-button">
+                  <img
+                    src="/Odin_DashBoard/assests/star_24dp_ECF9FF_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="save"
+                  />
+                </button>
+                <button class="card-button">
+                  <img
+                    src="/Odin_DashBoard/assests/visibility_24dp_ECF9FF_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="insights"
+                  />
+                </button>
+                <button class="card-button">
+                  <img
+                    src="/Odin_DashBoard/assests/share_24dp_ECF9FF_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="share"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div>
+                <h2>Safety</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                  adipisci quis enim dolore illo deleniti vero illum, expedita
+                  id odio! Facilis in consequatur quisquam rerum voluptatem
+                  obcaecati perspiciatis accusantium reiciendis.
+                </p>
+              </div>
+              <div class="card-btns-container">
+                <button class="card-button">
+                  <img
+                    src="/Odin_DashBoard/assests/star_24dp_ECF9FF_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="save"
+                  />
+                </button>
+                <button class="card-button">
+                  <img
+                    src="/Odin_DashBoard/assests/visibility_24dp_ECF9FF_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="insights"
+                  />
+                </button>
+                <button class="card-button">
+                  <img
+                    src="/Odin_DashBoard/assests/share_24dp_ECF9FF_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="share"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div>
+                <h2>Environment</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                  adipisci quis enim dolore illo deleniti vero illum, expedita
+                  id odio! Facilis in consequatur quisquam rerum voluptatem
+                  obcaecati perspiciatis accusantium reiciendis.
+                </p>
+              </div>
+              <div class="card-btns-container">
+                <button class="card-button">
+                  <img
+                    src="/Odin_DashBoard/assests/star_24dp_ECF9FF_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="save"
+                  />
+                </button>
+                <button class="card-button">
+                  <img
+                    src="/Odin_DashBoard/assests/visibility_24dp_ECF9FF_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="insights"
+                  />
+                </button>
+                <button class="card-button">
+                  <img
+                    src="/Odin_DashBoard/assests/share_24dp_ECF9FF_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="share"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div>
+                <h2>Environment</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                  adipisci quis enim dolore illo deleniti vero illum, expedita
+                  id odio! Facilis in consequatur quisquam rerum voluptatem
+                  obcaecati perspiciatis accusantium reiciendis.
+                </p>
+              </div>
+              <div class="card-btns-container">
+                <button class="card-button">
+                  <img
+                    src="/Odin_DashBoard/assests/star_24dp_ECF9FF_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="save"
+                  />
+                </button>
+                <button class="card-button">
+                  <img
+                    src="/Odin_DashBoard/assests/visibility_24dp_ECF9FF_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="insights"
+                  />
+                </button>
+                <button class="card-button">
+                  <img
+                    src="/Odin_DashBoard/assests/share_24dp_ECF9FF_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="share"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- ANOUCMENTS----------------------------------------- -->
+          <div class="anoucment-container">
+            <div class="anoucments">
+              <div>
+                <h4>Site maintenance</h4>
+                <p class="dimmed-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing
+                  elite,Lorem ipsum dolor, sit amet consectetur adipisicing
+                  elite sum dolor
+                </p>
+                <br />
+                <h4>Site maintenance</h4>
+                <p class="dimmed-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing
+                  elite,Lorem ipsum dolor, sit amet consectetur adipisicing
+                  elite sum dolor
+                </p>
+                <br />
+                <h4>Site maintenance</h4>
+                <p class="dimmed-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing
+                  elite,Lorem ipsum dolor, sit amet consectetur adipisicing
+                  elite sum dolor
+                </p>
+              </div>
+            </div>
+
+            <h3>Trending</h3>
+            <div class="trending">
+              <div class="trending-mini-contianer flex-row align-center gap-1">
+                <div>
+                  <img
+                    src="/Odin_DashBoard/assests/avatar.jpeg"
+                    alt="trending-avatar"
+                    class="trending-avatar"
+                  />
+                </div>
+                <div>
+                  <p class="metioned-text">@jakub</p>
+                  <p class="dimmed-text">World Health Organisation</p>
+                </div>
+              </div>
+
+              <div class="trending-mini-contianer flex-row align-center gap-1">
+                <div>
+                  <img
+                    src="/Odin_DashBoard/assests/man.png"
+                    alt="trending-avatar"
+                    class="trending-avatar"
+                  />
+                </div>
+                <div>
+                  <p class="metioned-text">@josef</p>
+                  <p class="dimmed-text">World Doctors Organisation</p>
+                </div>
+              </div>
+
+              <div class="trending-mini-contianer flex-row align-center gap-1">
+                <div>
+                  <img
+                    src="/Odin_DashBoard/assests/welder.png"
+                    alt="trending-avatar"
+                    class="trending-avatar"
+                  />
+                </div>
+                <div>
+                  <p class="metioned-text">@Ivo</p>
+                  <p class="dimmed-text">Lumber Jack association</p>
+                </div>
+              </div>
+
+              <div class="trending-mini-contianer flex-row align-center gap-1">
+                <div>
+                  <img
+                    src="/Odin_DashBoard/assests/lumberjack.png"
+                    alt="trending-avatar"
+                    class="trending-avatar"
+                  />
+                </div>
+                <div>
+                  <p class="metioned-text">@Stefan</p>
+                  <p class="dimmed-text">World Welder Organisation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
